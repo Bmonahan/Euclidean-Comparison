@@ -1,7 +1,10 @@
-function setup() {
-	createCanvas(windowWidth, windowHeight);
+var player;
+
+function preload() {
+  player = loadJSON('player_samp.json');
 }
 
-function draw() {
-
+function setup() {
+  noCanvas();
+  console.log(player);
 }
